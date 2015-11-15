@@ -14,8 +14,6 @@
 
 @interface CircleCell ()
 @property (weak, nonatomic) IBOutlet UIImageView *imgView;
-@property (weak, nonatomic) IBOutlet UILabel *titleLb;
-@property (weak, nonatomic) IBOutlet UIView *titleView;
 
 @end
 
@@ -29,13 +27,6 @@
         [_imgView sd_setImageWithURL:[NSURL URLWithString:circleInfo.image] placeholderImage:[UIImage imageNamed:kDefaultBigImage]];
     }else{
         _imgView.image = [UIImage imageNamed:circleInfo.image];
-    }
-    
-    _titleLb.text = circleInfo.title;
-    if (circleInfo.isHiddenTitle) {
-        _titleView.hidden = YES;
-    }else{
-        _titleView.hidden = NO;
     }
 }
 

@@ -15,10 +15,6 @@
 		046ED0071BF6E8A700CE2855 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046ED0051BF6E8A700CE2855 /* LaunchScreen.storyboard */; };
 		046ED0121BF6E8A700CE2855 /* CircleViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ED0111BF6E8A700CE2855 /* CircleViewDemoTests.m */; };
 		046ED01D1BF6E8A700CE2855 /* CircleViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ED01C1BF6E8A700CE2855 /* CircleViewDemoUITests.m */; };
-		046ED0411BF6F35400CE2855 /* CircleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ED03C1BF6F35400CE2855 /* CircleCell.m */; };
-		046ED0421BF6F35400CE2855 /* CircleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046ED03D1BF6F35400CE2855 /* CircleCell.xib */; };
-		046ED0431BF6F35400CE2855 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ED03F1BF6F35400CE2855 /* CircleView.m */; };
-		046ED0441BF6F35400CE2855 /* CircleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046ED0401BF6F35400CE2855 /* CircleView.xib */; };
 		046ED0681BF6F3C000CE2855 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ED0481BF6F3C000CE2855 /* MKAnnotationView+WebCache.m */; };
 		046ED0691BF6F3C000CE2855 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ED04A1BF6F3C000CE2855 /* NSData+ImageContentType.m */; };
 		046ED06A1BF6F3C000CE2855 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ED04C1BF6F3C000CE2855 /* SDImageCache.m */; };
@@ -35,6 +31,10 @@
 		046ED0751BF6F3C000CE2855 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ED0631BF6F3C000CE2855 /* UIImageView+HighlightedWebCache.m */; };
 		046ED0761BF6F3C000CE2855 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ED0651BF6F3C000CE2855 /* UIImageView+WebCache.m */; };
 		046ED0771BF6F3C000CE2855 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ED0671BF6F3C000CE2855 /* UIView+WebCacheOperation.m */; };
+		04B412E91BF83B7000E7124A /* CircleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B412E41BF83B7000E7124A /* CircleCell.m */; };
+		04B412EA1BF83B7000E7124A /* CircleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B412E51BF83B7000E7124A /* CircleCell.xib */; };
+		04B412EB1BF83B7000E7124A /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B412E71BF83B7000E7124A /* CircleView.m */; };
+		04B412EC1BF83B7000E7124A /* CircleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B412E81BF83B7000E7124A /* CircleView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,12 +71,6 @@
 		046ED0181BF6E8A700CE2855 /* CircleViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		046ED01C1BF6E8A700CE2855 /* CircleViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleViewDemoUITests.m; sourceTree = "<group>"; };
 		046ED01E1BF6E8A700CE2855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		046ED03B1BF6F35400CE2855 /* CircleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleCell.h; sourceTree = "<group>"; };
-		046ED03C1BF6F35400CE2855 /* CircleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleCell.m; sourceTree = "<group>"; };
-		046ED03D1BF6F35400CE2855 /* CircleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircleCell.xib; sourceTree = "<group>"; };
-		046ED03E1BF6F35400CE2855 /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
-		046ED03F1BF6F35400CE2855 /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
-		046ED0401BF6F35400CE2855 /* CircleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircleView.xib; sourceTree = "<group>"; };
 		046ED0471BF6F3C000CE2855 /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
 		046ED0481BF6F3C000CE2855 /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
 		046ED0491BF6F3C000CE2855 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
@@ -111,6 +105,12 @@
 		046ED0661BF6F3C000CE2855 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		046ED0671BF6F3C000CE2855 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		046ED0781BF6F40500CE2855 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		04B412E31BF83B7000E7124A /* CircleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleCell.h; sourceTree = "<group>"; };
+		04B412E41BF83B7000E7124A /* CircleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleCell.m; sourceTree = "<group>"; };
+		04B412E51BF83B7000E7124A /* CircleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircleCell.xib; sourceTree = "<group>"; };
+		04B412E61BF83B7000E7124A /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		04B412E71BF83B7000E7124A /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		04B412E81BF83B7000E7124A /* CircleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircleView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,12 +206,12 @@
 		046ED03A1BF6F35400CE2855 /* CircleView */ = {
 			isa = PBXGroup;
 			children = (
-				046ED03B1BF6F35400CE2855 /* CircleCell.h */,
-				046ED03C1BF6F35400CE2855 /* CircleCell.m */,
-				046ED03D1BF6F35400CE2855 /* CircleCell.xib */,
-				046ED03E1BF6F35400CE2855 /* CircleView.h */,
-				046ED03F1BF6F35400CE2855 /* CircleView.m */,
-				046ED0401BF6F35400CE2855 /* CircleView.xib */,
+				04B412E31BF83B7000E7124A /* CircleCell.h */,
+				04B412E41BF83B7000E7124A /* CircleCell.m */,
+				04B412E51BF83B7000E7124A /* CircleCell.xib */,
+				04B412E61BF83B7000E7124A /* CircleView.h */,
+				04B412E71BF83B7000E7124A /* CircleView.m */,
+				04B412E81BF83B7000E7124A /* CircleView.xib */,
 			);
 			path = CircleView;
 			sourceTree = "<group>";
@@ -368,9 +368,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				046ED0071BF6E8A700CE2855 /* LaunchScreen.storyboard in Resources */,
-				046ED0421BF6F35400CE2855 /* CircleCell.xib in Resources */,
+				04B412EA1BF83B7000E7124A /* CircleCell.xib in Resources */,
 				046ED0041BF6E8A700CE2855 /* Assets.xcassets in Resources */,
-				046ED0441BF6F35400CE2855 /* CircleView.xib in Resources */,
+				04B412EC1BF83B7000E7124A /* CircleView.xib in Resources */,
 				046ED0021BF6E8A700CE2855 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,13 +401,13 @@
 				046ED0761BF6F3C000CE2855 /* UIImageView+WebCache.m in Sources */,
 				046ED0741BF6F3C000CE2855 /* UIImage+WebP.m in Sources */,
 				046ED0701BF6F3C000CE2855 /* SDWebImagePrefetcher.m in Sources */,
-				046ED0431BF6F35400CE2855 /* CircleView.m in Sources */,
+				04B412E91BF83B7000E7124A /* CircleCell.m in Sources */,
 				046ED06C1BF6F3C000CE2855 /* SDWebImageDecoder.m in Sources */,
 				046ED06D1BF6F3C000CE2855 /* SDWebImageDownloader.m in Sources */,
-				046ED0411BF6F35400CE2855 /* CircleCell.m in Sources */,
 				046ED06F1BF6F3C000CE2855 /* SDWebImageManager.m in Sources */,
 				046ED0771BF6F3C000CE2855 /* UIView+WebCacheOperation.m in Sources */,
 				046ED0711BF6F3C000CE2855 /* UIButton+WebCache.m in Sources */,
+				04B412EB1BF83B7000E7124A /* CircleView.m in Sources */,
 				046ED0731BF6F3C000CE2855 /* UIImage+MultiFormat.m in Sources */,
 				046ECFFC1BF6E8A700CE2855 /* AppDelegate.m in Sources */,
 				046ED06E1BF6F3C000CE2855 /* SDWebImageDownloaderOperation.m in Sources */,
@@ -642,6 +642,7 @@
 				046ED0231BF6E8A700CE2855 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		046ED0241BF6E8A700CE2855 /* Build configuration list for PBXNativeTarget "CircleViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -650,6 +651,7 @@
 				046ED0261BF6E8A700CE2855 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		046ED0271BF6E8A700CE2855 /* Build configuration list for PBXNativeTarget "CircleViewDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -658,6 +660,7 @@
 				046ED0291BF6E8A700CE2855 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

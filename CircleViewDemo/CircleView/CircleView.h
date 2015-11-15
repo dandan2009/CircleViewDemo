@@ -19,7 +19,7 @@
 
 @interface CircleView : UIView
 //属性
-@property (nonatomic, strong) NSMutableArray *circleInfoArrM;//这个数组中存放的是CircleInfo对象
+@property (nonatomic, strong) NSArray *circleInfoArr;//这个数组中存放的是CircleInfo对象
 @property (nonatomic, weak) id<CircleViewDelegate> delegate;
 
 //方法

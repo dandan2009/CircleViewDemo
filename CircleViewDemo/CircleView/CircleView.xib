@@ -26,19 +26,52 @@
                         <outlet property="delegate" destination="9fI-vX-dC0" id="Ixf-CS-96x"/>
                     </connections>
                 </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wwu-dC-3uH">
+                    <rect key="frame" x="0.0" y="260" width="451" height="50"/>
+                    <subviews>
+                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="8FS-ZH-nDU">
+                            <rect key="frame" x="206" y="19" width="39" height="37"/>
+                            <animations/>
+                            <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="currentPageIndicatorTintColor" red="0.99607843139999996" green="0.86666666670000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </pageControl>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7i-K8-Ee4">
+                            <rect key="frame" x="206" y="8" width="40" height="20"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="4bu-Rj-LYs"/>
+                        <constraint firstItem="J7i-K8-Ee4" firstAttribute="centerX" secondItem="Wwu-dC-3uH" secondAttribute="centerX" id="KqB-bI-h3h"/>
+                        <constraint firstItem="J7i-K8-Ee4" firstAttribute="top" secondItem="Wwu-dC-3uH" secondAttribute="top" constant="8" id="aE7-W2-CjY"/>
+                        <constraint firstAttribute="bottom" secondItem="8FS-ZH-nDU" secondAttribute="bottom" constant="-6" id="dR7-Xb-Tlc"/>
+                        <constraint firstItem="8FS-ZH-nDU" firstAttribute="centerX" secondItem="Wwu-dC-3uH" secondAttribute="centerX" id="gA4-lL-Epm"/>
+                    </constraints>
+                </view>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="9vo-zm-Nuh" secondAttribute="trailing" id="4Rf-hO-OpG"/>
+                <constraint firstAttribute="trailing" secondItem="Wwu-dC-3uH" secondAttribute="trailing" id="7Vg-Xe-qfo"/>
                 <constraint firstItem="9vo-zm-Nuh" firstAttribute="top" secondItem="9fI-vX-dC0" secondAttribute="top" id="92s-Uv-Y4M"/>
                 <constraint firstAttribute="bottom" secondItem="9vo-zm-Nuh" secondAttribute="bottom" id="L3F-SV-h0S"/>
+                <constraint firstItem="Wwu-dC-3uH" firstAttribute="leading" secondItem="9fI-vX-dC0" secondAttribute="leading" id="NMa-HY-9v4"/>
                 <constraint firstItem="9vo-zm-Nuh" firstAttribute="leading" secondItem="9fI-vX-dC0" secondAttribute="leading" id="Ofd-jE-Vn3"/>
+                <constraint firstAttribute="bottom" secondItem="Wwu-dC-3uH" secondAttribute="bottom" id="mMe-49-e69"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="bgView" destination="Wwu-dC-3uH" id="6od-xQ-0Ew"/>
                 <outlet property="flowLayout" destination="26H-ec-zgi" id="LKa-fa-qj8"/>
                 <outlet property="mainCollectionView" destination="9vo-zm-Nuh" id="0bR-hs-agQ"/>
+                <outlet property="pageControl" destination="8FS-ZH-nDU" id="BW1-9o-nb0"/>
+                <outlet property="titleLb" destination="J7i-K8-Ee4" id="fxe-1v-n5e"/>
             </connections>
             <point key="canvasLocation" x="180.5" y="93"/>
         </view>

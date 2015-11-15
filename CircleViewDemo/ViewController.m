@@ -31,7 +31,7 @@
     
     CircleView *circleView = [CircleView circleView];
     circleView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, _circleView.bounds.size.height);
-    circleView.circleInfoArrM = _circleArr;
+    circleView.circleInfoArr = _circleArr;
     [_circleView addSubview:circleView];
 }
 

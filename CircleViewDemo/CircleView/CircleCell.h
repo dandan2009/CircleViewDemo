@@ -12,8 +12,6 @@
 
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *image;
-@property (nonatomic, assign) BOOL isHiddenTitle;
-
 @end
 
 

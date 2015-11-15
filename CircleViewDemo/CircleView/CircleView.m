@@ -12,6 +12,12 @@
 @property (weak, nonatomic) IBOutlet UICollectionView *mainCollectionView;
 @property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *flowLayout;
 
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+@property (weak, nonatomic) IBOutlet UILabel *titleLb;
+@property (weak, nonatomic) IBOutlet UIView *bgView;
+
+
+@property (nonatomic, strong) NSMutableArray *circleInfoArrM;
 @property (nonatomic, assign) NSInteger currentIndex;
 @end
 
@@ -25,6 +31,8 @@ static NSString *identity = @"CircleCell";
 
 - (void)awakeFromNib{
 
+    _bgView.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.3];
+    
     CGFloat width = self.frame.size.width;
     CGFloat height = self.frame.size.height;
     _flowLayout.itemSize = CGSizeMake(width, height);
@@ -47,6 +55,9 @@ static NSString *identity = @"CircleCell";
     NSInteger index = (indexPath.item - 1 + self.currentIndex + self.circleInfoArrM.count)%self.circleInfoArrM.count;
     CircleInfo *circleInfo = _circleInfoArrM[index];
     cell.circleInfo = circleInfo;
+    _titleLb.text = circleInfo.title;
+    _pageControl.currentPage = index%_circleInfoArr.count;
+
     return cell;
 }
 
@@ -62,13 +73,13 @@ static NSString *identity = @"CircleCell";
     }
 }
 
-- (void) setCircleInfoArrM:(NSMutableArray *)circleInfoArrM{
-    _circleInfoArrM = circleInfoArrM;
-    
-    if (_circleInfoArrM.count==2) {
+- (void)setCircleInfoArr:(NSArray *)circleInfoArr{
+    _circleInfoArr = circleInfoArr;
+    _pageControl.numberOfPages = circleInfoArr.count==1?0:circleInfoArr.count;
+    _circleInfoArrM = [NSMutableArray arrayWithArray:circleInfoArr];
+    if (_circleInfoArr.count == 2) {
         [_circleInfoArrM addObject:_circleInfoArrM[0]];
         [_circleInfoArrM addObject:_circleInfoArrM[1]];
-        
     }
     
     //重用cell，总共有两个cell，假设有三页(0,1,2)，默认显示中间页1
@@ -84,7 +95,6 @@ static NSString *identity = @"CircleCell";
     if (_circleInfoArrM.count>1) {//只有大于1也才进行切换
         [NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(scrollCircleCellDidByTimer:) userInfo:nil repeats:YES];
     }
-    
 }
 
 //拖拽结束,在这个方法中需要每次滚动完后，在滚回中间页，这样才能达到只有两个单元格在反复重用，并取出图片资源编号
@@ -119,6 +129,7 @@ static NSString *identity = @"CircleCell";
     
     //通过动画滚动到下一个位置
     [self.mainCollectionView scrollToItemAtIndexPath:toIndexPath atScrollPosition:scrollPosition animated:animate];
+    
     
     //计算下个位置的索引
     self.currentIndex = (fromIndexPath.item - 1 + self.currentIndex + self.circleInfoArrM.count)%self.circleInfoArrM.count;
